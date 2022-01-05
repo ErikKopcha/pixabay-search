@@ -1,0 +1,56 @@
+:root {
+  --bg-search: rgb(73, 97, 189);
+  --gray: #ebebeb;
+  --white: #ffffff;
+  --box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.38);
+  --box-shadow-hover: 0px 0px 28px 0px rgba(34, 60, 80, 0.38);
+  --base-color: #333333;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: var(--base-color);
+}
+
+a {
+  color: var(--base-color);
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
