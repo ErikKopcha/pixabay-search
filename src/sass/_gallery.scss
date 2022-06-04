@@ -16,6 +16,18 @@
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media (max-width: 1310px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .photo-card {
@@ -23,7 +35,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 330px;
-  max-height: 350px;
+  // max-height: 350px;
   box-shadow: var(--box-shadow);
   transition: box-shadow 0.4s ease, transform 0.4s ease;
   cursor: pointer;
@@ -51,5 +63,25 @@
   b {
     display: block;
     margin-bottom: 5px;
+  }
+
+  @media (max-width: 1200px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+    
+    .info-item {
+      margin: 0;
+    }
+    
+    b {
+      display: unset;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

@@ -49,11 +49,13 @@ class SearchForm {
         galleryControl.galleryElements.container.innerHTML = ``;
         galleryControl.galleryElements.container.classList.add('disabled');
 
-        this.getData(true);
+        this.getData({
+          isNotify: true,
+        });
       }
     });
 
-    Helpers.setLoader(galleryControl.galleryElements.container);
+    this.getData();
   }
 
   isValidForm() {
@@ -66,7 +68,13 @@ class SearchForm {
     return true;
   }
 
-  getData(isNotify = false) {
+  /**
+   * @param { Object } options
+   * @param { Boolean } options.isNotify
+   */
+  getData(options = {}) {
+    const { isNotify = false } = options;
+
     Api.getGalleryData({
       pageIndex: this.pageIndex,
       sQuery: this.searchElements.searchInput.value.trim(),
