@@ -84,4 +84,4 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{"../api/api":"WaDl","../helpers":"EDcV","./scrollPager":"Y3zW","./gallery":"QUdn","notiflix/build/notiflix-notify-aio":"MeeU"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/api/api"),require("./js/helpers"),require("./js/components/gallery"),require("./js/components/scrollPager"),require("./js/components/searchForm");
 },{"./sass/main.scss":"clu1","./js/api/api":"WaDl","./js/helpers":"EDcV","./js/components/gallery":"QUdn","./js/components/scrollPager":"Y3zW","./js/components/searchForm":"c7Pl"}]},{},["Focm"], null)
-//# sourceMappingURL=/pixabay-search/src.16efbacc.js.map
+//# sourceMappingURL=/pixabay-search/src.523a2d81.js.map
